@@ -1,0 +1,145 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+//
+// $Colors
+// Prefixes used:
+// * bc = base color
+//
+// Base Color
+$bc: #000000;
+$bc-darker: lighten($bc, 20);
+$bc-dark: lighten($bc, 40);
+$bc-light: lighten($bc, 60);
+$bc-lighter: lighten($bc, 80);
+
+// Primary Color
+// Prefixes used:
+// * bc = primary color
+$pc: #0047bb;
+
+// State Palette
+// Prefixes used:
+// * st = state color
+$st-ok:      #008022;
+$st-warning: #ffac00;
+$st-error:   #ff1e1e;
+
+// Text colors
+$text-color-base: $bc-dark;
+$text-color-link: $pc;
+
+// Absolute colors / common colors to avoid linting alerts on hardcoded values
+$color-white: #ffffff;
+$color-black: #000000;
+
+//
+// $Box-Shadow
+// Prefixes used:
+// * bs = box shadow
+//
+$bs-level-1: 0 1px 2px rgba($bc-darker, 0.5);
+$bs-level-2: 0 1px 2px rgba($bc-dark, 0.5);
+$bs-level-3: 0 1px 2px rgba($bc-light, 0.5);
+$bs-level-4: 0 1px 2px rgba($bc-lighter, 0.5);
+
+//
+// $Animations
+// Prefixes used:
+// * ani = animation
+//
+$ani-speed-slow: 0.35s;
+$ani-speed-regular: 0.25s;
+$ani-speed-fast: 0.15s;
+$ani-type: linear;
+
+//
+// $FONTS
+//
+// Font family
+// Prefixes used:
+// * ff = font family
+$ff-base:
+  -apple-system,
+  BlinkMacSystemFont,
+  "Segoe UI",
+  Roboto,
+  Helvetica,
+  Arial,
+  sans-serif,
+  "Apple Color Emoji",
+  "Segoe UI Emoji",
+  "Segoe UI Symbol";
+
+
+// Font Weights
+// Prefixes used:
+// * fw = font weight
+$fw-light: 300;
+$fw-regular: 400;
+$fw-semi-bold: 500;
+$fw-bold: 700;
+
+// Font sizes
+// Prefixes used:
+// * fz = font size
+$fz-base: 1em; // 16px
+$base-type-zoom: 100%;
+
+//
+// $SIZING
+// $SPACING
+//
+// Paddings
+// Primary prefixes:
+// * p = padding
+$p-base: 0.5rem; // 8px
+$p-giant: $p-base * 6; // 48px
+$p-s: $p-base / 2; // 4px
+$p-m: $p-base; // 8px
+$p-l: $p-base * 2; // 16px
+$p-xl: $p-base * 3; // 24px
+$p-xxl: $p-base * 4; // 32px
+
+// Margins
+// Primary prefixes:
+// * m = margin
+$m-base: 0.5rem; // 8px
+$m-s: $m-base / 2; // 4px
+$m-m: $m-base; // 8px
+$m-l: $m-base * 2; // 16px
+$m-xl: $m-base * 3; // 24px
+$m-xxl: $m-base * 4; // 32px
+
+// Icons
+// * sz = size
+$sz-icon-s: 16px;
+$sz-icon-m: 24px;
+$sz-icon-l: 32px;
+$sz-icon-xl: 40px;
+
+// Basic size unity used in space function and maps
+$scale: 1.61803;
+
+//
+// $Z-INDEX
+//
+// Gathering all Z layers of the application
+// @access private
+// @type Map
+// @prop {String} key - Layer’s name
+// @prop {Number} value - Z value mapped to the key
+$z-index-s: 1;
+$z-index-m: 2;
+$z-index-l: 3;
+$z-index-xl: 4;
+
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$breakpoints: (
+  'small': 320px,
+  'medium': 768px,
+  'large': 1024px,
+);
