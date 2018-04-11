@@ -44,10 +44,10 @@ $box-shaodw-4: 0 1px 2px rgba($color-base-lighter, 0.5);
 //
 // $Animations
 //
-$animation-speed-slow: 0.35s;
+$animation-speed-slow:    0.35s;
 $animation-speed-regular: 0.25s;
-$animation-speed-fast: 0.15s;
-$animation-type: easy-in;
+$animation-speed-fast:    0.15s;
+$animation-type:          easy-in;
 
 //
 // $Font-Family
@@ -67,15 +67,15 @@ $font-family-base:
 //
 // $Font-Weight
 //
-$font-weight-thin: 100;
+$font-weight-thin:       100;
 $font-weight-extralight: 200;
-$font-weight-light: 300;
-$font-weight-normal: 400;
-$font-weight-medium: 500;
-$font-weight-semibold: 600;
-$font-weight-bold: 700;
-$font-weight-extrabold: 800;
-$font-weight-black: 900;
+$font-weight-light:      300;
+$font-weight-normal:     400;
+$font-weight-medium:     500;
+$font-weight-semibold:   600;
+$font-weight-bold:       700;
+$font-weight-extrabold:  800;
+$font-weight-black:      900;
 
 
 
@@ -89,7 +89,7 @@ $font-base: 1rem; // 16px
 //
 // $SIZING
 //
-$master-size: 0.5rem;
+$master-size:     0.5rem;
 $container-width: 800px;
 
 // Size
