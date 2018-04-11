@@ -1,9 +1,11 @@
 //
 // Basic typography style for copy text
 //
+@import '../abstracts/variables.scss';
+
 body {
-  color: $text-color;
-  font-family: $text-font-stack;
-  font-size: 100%;
-  line-height: 1.4;
+    color: $color-base;
+    font-family: $font-family-base;
+    font-size: 100%;
+    line-height: 1.4;
 }
