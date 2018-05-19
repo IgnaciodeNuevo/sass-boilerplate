@@ -1,0 +1,9 @@
+// Add center vertically a relative item
+// @author Ignacio Villanueva
+// @param {String} $width
+
+@mixin vertical-center {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
