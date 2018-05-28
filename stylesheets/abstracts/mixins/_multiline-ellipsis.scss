@@ -1,14 +1,13 @@
 // Should be declared a max-width for every element
 
 @mixin multiline($lines-to-show, $font-size: 1rem, $line-height: 1.4) {
-  /* autoprefixer: off */
+  /* autoprefixer: ignore next */
   -webkit-box-orient: vertical;
+  /* autoprefixer: ignore next */
   -webkit-line-clamp: $lines-to-show;
-  /* autoprefixer: on */
   display: block; // Fallback for non-webkit
-  /* autoprefixer: off */
+  /* autoprefixer: ignore next */
   display: -webkit-box;
-  /* autoprefixer: off */
   font-size: $font-size;
   height: $font-size*$line-height*$lines-to-show; // Fallback for non-webkit
   line-height: $line-height;
