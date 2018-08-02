@@ -1,6 +1,7 @@
 //
 // Fix for vw, vh, vmin, vmax on iOS 7.
 // http://caniuse.com/#feat=viewport-units
+// Original Github Gist: https://gist.github.com/BenMorel/e9e34c08360ebbbd0634
 //
 // This fix works by replacing viewport units with px values on known screen sizes.
 //
