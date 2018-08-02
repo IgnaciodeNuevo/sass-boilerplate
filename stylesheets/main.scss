@@ -5,10 +5,13 @@
   'abstracts/variables',
   'abstracts/functions',
   'abstracts/mixins/absolute',
-  'abstracts/mixins/ellipsis',
-  'abstracts/mixins/multiline-ellipsis',
+  'abstracts/mixins/arrows',
+  'abstracts/mixins/baseline',
   'abstracts/mixins/custom-properties-fallback',
-  'abstracts/mixins/fonts';
+  'abstracts/mixins/ellipsis',
+  'abstracts/mixins/fonts',
+  'abstracts/mixins/multiline-ellipsis',
+  'abstracts/mixins/viewport-units-ios';
 
 // 2. Vendors
 @import
