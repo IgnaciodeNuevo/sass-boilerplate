@@ -6,8 +6,8 @@
 body {
     color: $color-base;
     font-family: $font-family-base;
-    font-size: 100%;
-    line-height: 1.4;
+    font-size: #{$base-size} / 16 + em;
+    line-height: #{$line-height} / #{$base-size};
 }
 
 h1,
@@ -29,4 +29,50 @@ pre,
 hr {
     margin-bottom: $line-height + px;
     margin-bottom: #{$line-height}/#{$base-size} + rem;
+}
+
+//
+// Headings
+//
+h1, .alpha {
+    @include font-size($h1-size);
+    //
+    // Given the information we have, how would you generate the number below?
+    //
+    @include line-height($h1-size, $line-height); /* 48px */
+}
+h2, .beta {
+    @include font-size($h2-size);
+    //
+    // Given the information we have, how would you generate the number below?
+    //
+    @include line-height($h2-size, $line-height); /* 48px */
+}
+h3, .gamma {
+    @include font-size($h3-size);
+    //
+    // Given the information we have, how would you generate the number below?
+    //
+    @include line-height($h3-size, $line-height); /* 24px */
+}
+h4, .delta {
+    @include font-size($h4-size);
+    //
+    // Given the information we have, how would you generate the number below?
+    //
+    @include line-height($h4-size, $line-height); /* 24px */
+}
+h5, .epsilon {
+    @include font-size($h5-size);
+    //
+    // Given the information we have, how would you generate the number below?
+    //
+    @include line-height($h5-size, $line-height); /* 24px */
+}
+h6, .zeta {
+    @include font-size($h6-size);
+    //
+    // Given the information we have, how would you generate the number below?
+    //
+    @include line-height($h6-size, $line-height); /* 24px */
 }
