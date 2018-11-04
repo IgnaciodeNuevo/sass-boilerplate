@@ -12,3 +12,19 @@
 // .class {
 //    @include props('CSS Property ', 'Sass Map Key');
 // }
+
+@mixin plainProps($property, $variable, $fallback) {
+    #{$property}: $fallback;
+    #{$property}: var($variable);
+}
+
+// Usage:
+// .dashboard {
+//     @include variable(background, --theme-primary-color, blue);
+// }
+
+// Compiles to:
+// .dashboard {
+//     background: blue;
+//     background: var(--theme-primary-color);
+// }
