@@ -1,3 +1,9 @@
+// -----------------------------------------------------------------------------
+// This file contains a text-decoration-skip: ink facke Sass mixin.
+// See: https://caniuse.com/#feat=text-decoration
+// See also: https://css-tricks.com/almanac/properties/t/text-decoration-skip/
+// -----------------------------------------------------------------------------
+
 @mixin underline($shadow-color: #fff, $border-color: currentColor, $border-width: 1px) {
     background-position: center bottom 30%;
     background-size: 100% $border-width;
