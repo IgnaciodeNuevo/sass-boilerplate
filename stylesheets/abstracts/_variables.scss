@@ -7,6 +7,7 @@
 //
 
 // #Base-Color
+$color-white: #ffffff;
 $color-base: #000000;
 $color-base-darker: lighten($color-base, 20);
 $color-base-dark: lighten($color-base, 40);
@@ -16,89 +17,70 @@ $color-base-lighter: lighten($color-base, 80);
 // #Primary-Color
 $color-primary: #0047bb;
 
-// #State-Palette
-$state-ok:      #008022;
-$state-warning: #ffac00;
-$state-error:   #ff1e1e;
-
-// #Text-Colors
+// #Other-Colors
 $text-color-base: $color-base-dark;
 $text-color-link: $color-primary;
-
-// #Absolute-colors to avoid linting alerts on hardcoded values
-$color-white: #ffffff;
-$color-black: #000000;
-
-
 
 //
 // #Box-Shadow
 //
-$box-shaodw-1: 0 1px 2px rgba($color-base-darker, 0.5);
-$box-shaodw-2: 0 1px 2px rgba($color-base-dark, 0.5);
-$box-shaodw-3: 0 1px 2px rgba($color-base-light, 0.5);
-$box-shaodw-4: 0 1px 2px rgba($color-base-lighter, 0.5);
-
-
+$box-shaodw-1: 0 1px 2px rgba($color-base-darker, .5);
+$box-shaodw-2: 0 1px 2px rgba($color-base-dark, .5);
+$box-shaodw-3: 0 1px 2px rgba($color-base-light, .5);
+$box-shaodw-4: 0 1px 2px rgba($color-base-lighter, .5);
 
 //
 // #Animations
 //
-$animation-speed-slow:    0.35s;
-$animation-speed-regular: 0.25s;
-$animation-type:          ease-in;
-
-
+$animation-speed-slow: .35s;
+$animation-speed-regular: .25s;
+$animation-type: ease-in;
 
 //
 // #Fonts
 //
-
-// #Font-Variables
-$font-ratio: 1.15;
-$base-size: 16;
-$line-height: 24;
-$h1-size: 37.00897225;
-$h2-size: 32.181715;
-$h3-size: 27.9841;
-$h4-size: 24.334;
-$h5-size: 21.16;
-$h6-size: 18.4;
-
-// #Font-Family
 $font-family-base:
-  -apple-system,
-  BlinkMacSystemFont,
-  "Segoe UI",
-  Roboto,
-  Helvetica,
-  Arial,
-  sans-serif,
-  "Apple Color Emoji",
-  "Segoe UI Emoji",
-  "Segoe UI Symbol";
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif,
+    'Apple Color Emoji',
+    'Segoe UI Emoji',
+    'Segoe UI Symbol';
 
 //
 // $Font-Weight
 //
-$font-weight-thin:       100;
+$font-weight-thin: 100;
 $font-weight-extralight: 200;
-$font-weight-light:      300;
-$font-weight-normal:     400;
-$font-weight-medium:     500;
-$font-weight-semibold:   600;
-$font-weight-bold:       700;
-$font-weight-extrabold:  800;
-$font-weight-black:      900;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-extrabold: 800;
+$font-weight-black: 900;
 
+//
+// #Scale
+//
+$scale: 1.25;
 
+//
+// #Font-Size
+//
+$font-base: 1em; // 16px
 
 //
 // #Spacing
 //
 $container-width: 50em; // 800px
 $container-padding: 1.25em; // 20px
-$space-default: 1rem; // 16px
+$space-default: $font-base; // Is dependant on $font-base and should be 1em;
+
 
 $space-xxs: $space-default / 8; // 2px
 $space-xs: $space-default / 4; // 4px
@@ -106,6 +88,7 @@ $space-s: $space-default / 2; // 8px
 $space-m: $space-default; // 16px
 $space-l: $space-default * 2; // 32px
 $space-xl: $space-default * 4; // 64px
+$space-xxl: $space-default * 8; // 128px
 
 // #Padding
 $padding-xxs: $space-xxs; // 2px
@@ -114,6 +97,7 @@ $padding-s: $space-s; // 8px
 $padding-m: $space-m; // 16px
 $padding-l: $space-l; // 32px
 $padding-xl: $space-xl; // 64px
+$padding-xxl: $space-xxl; // 128px
 
 // #Margin
 $margin-xxs: $space-xxs; // 2px
@@ -122,6 +106,7 @@ $margin-s: $space-s; // 8px
 $margin-m: $space-m; // 16px
 $margin-l: $space-l; // 32px
 $margin-xl: $space-xl; // 64px
+$margin-xxl: $space-xxl; // 128px
 
 // #Icon
 $icon-xxs: $space-xxs; // 2px
@@ -130,15 +115,18 @@ $icon-s: $space-s; // 8px
 $icon-m: $space-m; // 16px
 $icon-l: $space-l; // 32px
 $icon-xl: $space-xl; // 64px
-
-
+$icon-xxl: $space-xxl; // 128px
 
 //
-// #Scale
+// #Media-Queries
 //
-$scale: 1.61803;
-
-
+$mq-xxs: 20em; // 320px
+$mq-xs: 30em; // 480px
+$mq-s: 48em; // 768px
+$mq-m: 61.25em; // 980px
+$mq-l: 80em; // 1280px
+$mq-xl: 90em; // 1440px
+$mq-xxl: 160em; // 2650px
 
 //
 // $Z-Index
@@ -147,3 +135,13 @@ $z-index-s: 1;
 $z-index-m: 2;
 $z-index-l: 3;
 $z-index-xl: 4;
+
+//
+// #Variables map
+//
+$VariablesMap: (
+    color-base-darker: $color-base-darker,
+    color-base-dark: $color-base-dark,
+    color-base-light: $color-base-light,
+    color-base-lighter: $color-base-lighter,
+);

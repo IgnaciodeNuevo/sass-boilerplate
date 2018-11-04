@@ -4,15 +4,13 @@
 @import
   'abstracts/variables',
   'abstracts/functions',
-  'abstracts/mixins/absolute',
   'abstracts/mixins/arrows',
+  'abstracts/mixins/aspect-ratio',
   'abstracts/mixins/baseline',
-  'abstracts/mixins/custom-properties-fallback',
+  'abstracts/mixins/custom-properties',
   'abstracts/mixins/ellipsis',
+  'abstracts/mixins/ellipsis-multiline',
   'abstracts/mixins/fonts',
-  'abstracts/mixins/font-scale',
-  'abstracts/mixins/multiline-ellipsis',
-  'abstracts/mixins/viewport-units-ios',
   'abstracts/mixins/crop-text',
   'abstracts/mixins/underline';
 
@@ -37,3 +35,7 @@
 // 6. Page-specific styles
 @import
   'pages/home';
+
+// 7. Root variables loop
+@import
+  'root/root-loop';
