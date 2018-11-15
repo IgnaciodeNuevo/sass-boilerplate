@@ -90,23 +90,15 @@ $space-l: $space-default * 2; // 32px
 $space-xl: $space-default * 4; // 64px
 $space-xxl: $space-default * 8; // 128px
 
-// #Padding
-$padding-xxs: $space-xxs; // 2px
-$padding-xs: $space-xs; // 4px
-$padding-s: $space-s; // 8px
-$padding-m: $space-m; // 16px
-$padding-l: $space-l; // 32px
-$padding-xl: $space-xl; // 64px
-$padding-xxl: $space-xxl; // 128px
-
-// #Margin
-$margin-xxs: $space-xxs; // 2px
-$margin-xs: $space-xs; // 4px
-$margin-s: $space-s; // 8px
-$margin-m: $space-m; // 16px
-$margin-l: $space-l; // 32px
-$margin-xl: $space-xl; // 64px
-$margin-xxl: $space-xxl; // 128px
+$spacings: (
+    xxs: 0.125rem, // 2px
+    xs: 0.25rem, // 4px
+    s: 0.5rem, // 8px
+    m: 1rem, // 16px
+    l: 2rem, // 32px
+    xl: 4rem, // 64px
+    xxl: 8rem, // 128px
+);
 
 // #Icon
 $icon-xxs: $space-xxs; // 2px
