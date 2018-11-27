@@ -82,14 +82,9 @@ $container-padding: 1.25em; // 20px
 $space-default: $font-base; // Is dependant on $font-base and should be 1em;
 
 
-$space-xxs: $space-default / 8; // 2px
-$space-xs: $space-default / 4; // 4px
-$space-s: $space-default / 2; // 8px
-$space-m: $space-default; // 16px
-$space-l: $space-default * 2; // 32px
-$space-xl: $space-default * 4; // 64px
-$space-xxl: $space-default * 8; // 128px
-
+//
+// #Space Map
+//
 $spacings: (
     xxs: 0.125rem, // 2px
     xs: 0.25rem, // 4px
@@ -100,7 +95,29 @@ $spacings: (
     xxl: 8rem, // 128px
 );
 
-// #Icon
+//
+// #Space Sizes
+//
+$space-xxs: $font-base / 8; // 2px
+$space-xs: $font-base / 4; // 4px
+$space-s: $font-base / 2; // 8px
+$space-m: $font-base; // 16px
+$space-l: $font-base * 2; // 32px
+$space-xl: $font-base * 4; // 64px
+$space-xxl: $font-base * 8; // 128px
+
+//
+// #Border-Radius Sizes
+//
+$border-radius-xxs: $space-xxs; // 2px
+$border-radius-xs: $space-xs; // 4px
+$border-radius-s: $space-s; // 8px
+$border-radius-m: $space-m; // 16px
+$border-radius-l: $space-l; // 32px
+$border-radius-xl: $space-xl; // 64px
+$border-radius-xxl: $space-xxl; // 128px
+
+// #Icon Sizes
 $icon-xxs: $space-xxs; // 2px
 $icon-xs: $space-xs; // 4px
 $icon-s: $space-s; // 8px
