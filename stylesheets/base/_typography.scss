@@ -6,9 +6,10 @@
 body {
     color: $color-base;
     font-family: $font-family-base;
-    font-size: #{$base-size} / 16 + em;
-    line-height: #{$line-height} / #{$base-size};
+    font-size: $font-base;
+    line-height: $line-height;
 }
+
 
 h1,
 h2,
@@ -27,6 +28,5 @@ table,
 form,
 pre,
 hr {
-    margin-bottom: $line-height + px;
-    margin-bottom: #{$line-height}/#{$base-size} + rem;
+    margin-bottom: calc(#{$line-height} / #{$font-base});
 }
