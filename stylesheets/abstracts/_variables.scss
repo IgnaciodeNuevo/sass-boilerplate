@@ -81,20 +81,6 @@ $container-width: 50em; // 800px
 $container-padding: 1.25em; // 20px
 $space-default: $font-base; // Is dependant on $font-base and should be 1em;
 
-
-//
-// #Space Map
-//
-$spacings: (
-    xxs: 0.125rem, // 2px
-    xs: 0.25rem, // 4px
-    s: 0.5rem, // 8px
-    m: 1rem, // 16px
-    l: 2rem, // 32px
-    xl: 4rem, // 64px
-    xxl: 8rem, // 128px
-);
-
 //
 // #Space Sizes
 //
@@ -144,13 +130,3 @@ $z-index-s: 1;
 $z-index-m: 2;
 $z-index-l: 3;
 $z-index-xl: 4;
-
-//
-// #Variables map
-//
-$VariablesMap: (
-    color-base-darker: $color-base-darker,
-    color-base-dark: $color-base-dark,
-    color-base-light: $color-base-light,
-    color-base-lighter: $color-base-lighter,
-);
