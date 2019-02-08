@@ -1,0 +1,11 @@
+// -----------------------------------------------------
+// This file contains the mixin to clear (hack) elements
+// -----------------------------------------------------
+
+@mixin clearfix {
+    &:after {
+        clear: both;
+        content: "";
+        display: table;
+    }
+}
