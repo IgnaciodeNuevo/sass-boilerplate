@@ -1,3 +1,7 @@
+// -----------------------------------------------------------------------------
+// This file contains the mixin to transition properties on :hover...
+// -----------------------------------------------------------------------------
+
 // Transition Mixin
 // @params {String} $prop
 @mixin transition($prop: all) {
