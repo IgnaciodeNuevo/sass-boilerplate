@@ -24,10 +24,10 @@ $text-color-link: $color-primary;
 //
 // #Box-Shadow
 //
-$box-shaodw-1: 0 1px 2px rgba($color-base-darker, .5);
-$box-shaodw-2: 0 1px 2px rgba($color-base-dark, .5);
-$box-shaodw-3: 0 1px 2px rgba($color-base-light, .5);
-$box-shaodw-4: 0 1px 2px rgba($color-base-lighter, .5);
+$box-shaodw-1: 0 1px 2px rgba($color-base-darker, 0.5);
+$box-shaodw-2: 0 1px 2px rgba($color-base-dark, 0.5);
+$box-shaodw-3: 0 1px 2px rgba($color-base-light, 0.5);
+$box-shaodw-4: 0 1px 2px rgba($color-base-lighter, 0.5);
 
 //
 // #Animations
@@ -39,17 +39,12 @@ $animation-type-cubic: cubic-bezier(0, 0, 0.3, 1);
 //
 // #Fonts
 //
-$font-family-base:
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    Helvetica,
-    Arial,
-    sans-serif,
-    'Apple Color Emoji',
-    'Segoe UI Emoji',
-    'Segoe UI Symbol';
+$font-family-body-fallback: Arial, sans-serif;
+$font-family-title-fallback: Georgia, sans-serif;
+$font-family-body-regular: 'Brando Regular Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+$font-family-body-semibold: 'Brando Semibold Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+$font-family-title: 'Guardian Bold Egyptian', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, serif;
+$font-family-code: 'Input', monospace;
 
 //
 // $Font-Weight
