@@ -1,0 +1,7 @@
+@mixin opentype-all-opentype-small-caps() {
+    font-variant-caps: opentype-all-opentype-small-caps;
+    font-feature-settings: "c2sc", "smcp";
+    -webkit-font-feature-settings: "c2sc", "smcp";
+       -moz-font-feature-settings: "c2sc", "smcp";
+    letter-spacing: var(--letter-spacing); // Equals 5%
+}
