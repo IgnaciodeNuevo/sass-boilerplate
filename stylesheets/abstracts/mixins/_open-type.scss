@@ -13,3 +13,15 @@
        -moz-font-feature-settings: "onum", "smcp", "c2sc" 0;
     letter-spacing: var(--letter-spacing); // Equals 5%
 }
+
+@mixin opentype-liga() {
+    // IE doesn’t support @supports; explicitly use the prefixed version.
+    @supports not (font-variant-ligatures: common-ligatures) {
+        font-feature-settings: "liga";
+    }
+
+    // IE doesn’t support @supports; explicitly use the prefixed version.
+    -ms-font-feature-settings: "liga";
+    // Best case scenario, just use `font-variant-*`.
+    font-variant-ligatures: common-ligatures;
+}
