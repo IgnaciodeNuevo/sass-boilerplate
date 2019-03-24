@@ -1,3 +1,6 @@
+// -----------------------------------------------------------------------------
+// This file contains the arrow mixing, let's you set the "arrow" of a tooltip
+// -----------------------------------------------------------------------------
 @mixin box-arrow($arrowDirection, $arrowColor, $arrowSize: 10px) {
     position: relative;
     z-index: 10;
